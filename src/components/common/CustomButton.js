@@ -1,8 +1,24 @@
 import React from 'react';
-import { TouchableOpacity, Text, ActivityIndicator, StyleSheet } from 'react-native';
-import { Colors, Fonts, Spacing, GlobalStyles } from '../../styles/globalStyles';
+import {
+  TouchableOpacity,
+  Text,
+  ActivityIndicator,
+  StyleSheet,
+} from 'react-native';
+import {
+  Colors,
+  Fonts,
+  Spacing,
+  GlobalStyles,
+} from '../../styles/globalStyles';
 
-const CustomButton = ({ title, onPress, loading = false, disabled = false, style }) => {
+const CustomButton = ({
+  title,
+  onPress,
+  loading = false,
+  disabled = false,
+  style,
+}) => {
   return (
     <TouchableOpacity
       style={[styles.button, style, disabled && styles.disabledButton]}
